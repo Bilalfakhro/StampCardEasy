@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("view has loaded!")
     }
-
-
+    @IBAction func qrCodeButton(_ sender: Any) {
+        print("button pressed")
+        self.performSegue(withIdentifier: "qrCodeSegue", sender: self)
+    }
 }
 
