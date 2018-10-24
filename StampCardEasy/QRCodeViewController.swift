@@ -1,9 +1,9 @@
 //
 //  QRCodeViewController.swift
-//  QRCodeReader
+//  StampCardEasy
 //
-//  Created by Simon Ng on 13/10/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Created by Bilal Fakhro on 2018-10-23.
+//  Copyright © 2018 Bilal Fakhro. All rights reserved.
 //
 
 import UIKit
@@ -21,8 +21,8 @@ class QRCodeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func qrCodeScannerButton(_ sender: Any) {
-        print("button pressed")
+    @IBAction func qrCodeBackHome(_ sender: AnyObject) {
+        print("Back Home!")
     }
+    
 }

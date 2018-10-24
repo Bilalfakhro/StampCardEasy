@@ -1,16 +1,16 @@
 //
-//  QRScannerController.swift
-//  QRCodeReader
+//  QRScannerViewController.swift
+//  StampCardEasy
 //
-//  Created by Simon Ng on 13/10/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Created by Bilal Fakhro on 2018-10-23.
+//  Copyright © 2018 Bilal Fakhro. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
 class QRScannerViewController: UIViewController {
-
+    
     @IBOutlet var messageLabel:UILabel!
     @IBOutlet var topbar: UIView!
     
@@ -18,7 +18,7 @@ class QRScannerViewController: UIViewController {
     
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
-
+    
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.upce,
                                       AVMetadataObject.ObjectType.code39,
                                       AVMetadataObject.ObjectType.code39Mod43,
@@ -32,10 +32,10 @@ class QRScannerViewController: UIViewController {
                                       AVMetadataObject.ObjectType.dataMatrix,
                                       AVMetadataObject.ObjectType.interleaved2of5,
                                       AVMetadataObject.ObjectType.qr]
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Get the back-facing camera for capturing videos
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInDualCamera], mediaType: AVMediaType.video, position: .back)
         
@@ -56,9 +56,9 @@ class QRScannerViewController: UIViewController {
             captureSession.addOutput(captureMetadataOutput)
             
             // Set delegate and use the default dispatch queue to execute the call back
-            captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+            captureMetadataOutput.setMetadataObjectsDelegate(self as! AVCaptureMetadataOutputObjectsDelegate, queue: DispatchQueue.main)
             captureMetadataOutput.metadataObjectTypes = supportedCodeTypes
-//            captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+            // captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
             
         } catch {
             // If any error occurs, simply print it out and don't continue any more.
@@ -89,14 +89,14 @@ class QRScannerViewController: UIViewController {
             view.bringSubviewToFront(qrCodeFrameView)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Helper methods
-
+    
     func launchApp(decodedURL: String) {
         
         if presentedViewController != nil {
@@ -120,7 +120,7 @@ class QRScannerViewController: UIViewController {
         
         present(alertPrompt, animated: true, completion: nil)
     }
-
+    
 }
 
 extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
