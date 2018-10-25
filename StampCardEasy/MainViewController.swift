@@ -15,35 +15,39 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         print("view has loaded!")
     }
-    @IBAction func qrCodeButton(_ sender: AnyObject) {
-      //  print("button pressed")
+    
+    // QuickScanner Buttons on MainViewController
+    @IBAction func qrCodeButton(_ sender: UIButton) {
+        print("button pressed")
         self.performSegue(withIdentifier: "qrCodeSegue", sender: self)
     }
-    @IBAction func addPlaceButton(_ sender: AnyObject){
-     //   print("button pressed")
+    // Add a Place Buttons on MainViewController
+    @IBAction func addPlaceButton(_ sender: UIButton){
+        print("button pressed")
         self.performSegue(withIdentifier: "addPlaceSegue", sender: self)
     }
-    @IBAction func profileButton(_ sender: AnyObject) {
-     //   print("button pressed")
+    // Profile Buttons on MainViewController
+    @IBAction func profileButton(_ sender: UIButton) {
+        print("button pressed")
         self.performSegue(withIdentifier: "profileSegue", sender: self)
     }
-    @IBAction func purchaseButton(_ sender: AnyObject) {
-     //   print("button pressed")
+    // Purchase Buttons on MainViewController
+    @IBAction func purchaseButton(_ sender: UIButton) {
+        print("button pressed")
         self.performSegue(withIdentifier: "purchaseSegue", sender: self)
     }
-    @IBAction func settingsButton(_ sender: AnyObject) {
-     //   print("button pressed")
+    // Settings Buttons on MainViewController
+    @IBAction func settingsButton(_ sender: UIButton) {
+        print("button pressed")
         self.performSegue(withIdentifier: "settingsSegue", sender: self)
     }
-    @IBAction func infoButton(_ sender: AnyObject) {
-    //    print("button pressed")
+    // Info Buttons on MainViewController
+    @IBAction func infoButton(_ sender: UIButton) {
+        print("button pressed")
         self.performSegue(withIdentifier: "infoSegue", sender: self)
     }
     
     // X-button from qrcodescanner view.
-    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
-        dismiss(animated: true, completion: nil)
-    }
-
+   
 }
 

@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func settingsBackHome(_ sender: AnyObject) {
         print("Back Home!")
+        self.performSegue(withIdentifier: "settingsBackHomeSegue", sender: self)
     }
     
 }

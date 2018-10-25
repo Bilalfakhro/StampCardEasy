@@ -18,6 +18,7 @@ class AddPlaceViewController: UIViewController {
 
     @IBAction func addPlaceBackHome(_ sender: AnyObject) {
         print("Back Home!")
+        self.performSegue(withIdentifier: "addPlaceBackHomeSegue", sender: self)
     }
     
 }

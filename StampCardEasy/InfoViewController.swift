@@ -18,6 +18,7 @@ class InfoViewController: UIViewController {
     
     @IBAction func infoBackHome(_ sender: AnyObject) {
         print("Back Home!")
+        self.performSegue(withIdentifier: "infoBackHomeSegue", sender: self)
     }
     
 }

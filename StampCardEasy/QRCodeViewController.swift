@@ -23,6 +23,7 @@ class QRCodeViewController: UIViewController {
     
     @IBAction func qrCodeBackHome(_ sender: AnyObject) {
         print("Back Home!")
+        self.performSegue(withIdentifier: "qrCodeBackHomeSegue", sender: self)
     }
     
 }

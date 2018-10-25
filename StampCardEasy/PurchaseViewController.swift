@@ -18,6 +18,7 @@ class PurchaseViewController: UIViewController {
     
     @IBAction func purchaseBackHome(_ sender: AnyObject) {
         print("Back Home!")
+        self.performSegue(withIdentifier: "purchaseBackHomeSegue", sender: self)
     }
     
 
