@@ -13,7 +13,8 @@
 		DB2C62D4217FA7B700F40095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62D2217FA7B700F40095 /* Main.storyboard */; };
 		DB2C62D9217FA7B800F40095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62D7217FA7B800F40095 /* LaunchScreen.storyboard */; };
 		DB2C62E1217FAA1900F40095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62E0217FAA1800F40095 /* Assets.xcassets */; };
-		DB6BE5C5217FDC66001C49B8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5C4217FDC66001C49B8 /* InfoViewController.swift */; };
+		DB2F08DA218389AE006BA147 /* infoPageControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */; };
+		DB5F6BF12183D6400025BC9F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5F6BF02183D6400025BC9F /* HeaderCell.swift */; };
 		DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */; };
 		DB6BE5C9217FDD90001C49B8 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */; };
 		DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */; };
@@ -30,7 +31,8 @@
 		DB2C62D8217FA7B800F40095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB2C62DA217FA7B800F40095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB2C62E0217FAA1800F40095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB6BE5C4217FDC66001C49B8 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPageControllViewController.swift; sourceTree = "<group>"; };
+		DB5F6BF02183D6400025BC9F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
@@ -68,21 +70,30 @@
 		DB2C62CD217FA7B700F40095 /* StampCardEasy */ = {
 			isa = PBXGroup;
 			children = (
+				DB2F08D821825DD3006BA147 /* QRCode  */,
 				DB2C62CE217FA7B700F40095 /* AppDelegate.swift */,
 				DB2C62D0217FA7B700F40095 /* MainViewController.swift */,
 				DB2C62D2217FA7B700F40095 /* Main.storyboard */,
+				DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */,
 				DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */,
 				DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */,
 				DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */,
 				DB15FBB4217FDA9A00C97ADC /* SettingsViewController.swift */,
-				DB6BE5C4217FDC66001C49B8 /* InfoViewController.swift */,
-				DB6BE5D0217FE42B001C49B8 /* QRCodeViewController.swift */,
-				DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */,
 				DB2C62E0217FAA1800F40095 /* Assets.xcassets */,
 				DB2C62D7217FA7B800F40095 /* LaunchScreen.storyboard */,
 				DB2C62DA217FA7B800F40095 /* Info.plist */,
+				DB5F6BF02183D6400025BC9F /* HeaderCell.swift */,
 			);
 			path = StampCardEasy;
+			sourceTree = "<group>";
+		};
+		DB2F08D821825DD3006BA147 /* QRCode  */ = {
+			isa = PBXGroup;
+			children = (
+				DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */,
+				DB6BE5D0217FE42B001C49B8 /* QRCodeViewController.swift */,
+			);
+			path = "QRCode ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,11 +174,12 @@
 			files = (
 				DB2C62D1217FA7B700F40095 /* MainViewController.swift in Sources */,
 				DB2C62CF217FA7B700F40095 /* AppDelegate.swift in Sources */,
+				DB2F08DA218389AE006BA147 /* infoPageControllViewController.swift in Sources */,
 				DB6BE5D2217FE42B001C49B8 /* QRCodeViewController.swift in Sources */,
+				DB5F6BF12183D6400025BC9F /* HeaderCell.swift in Sources */,
 				DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */,
 				DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */,
 				DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */,
-				DB6BE5C5217FDC66001C49B8 /* InfoViewController.swift in Sources */,
 				DB15FBB5217FDA9A00C97ADC /* SettingsViewController.swift in Sources */,
 				DB6BE5C9217FDD90001C49B8 /* PurchaseViewController.swift in Sources */,
 			);
@@ -315,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8C3XR869H;
 				INFOPLIST_FILE = StampCardEasy/Info.plist;
@@ -333,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8C3XR869H;
 				INFOPLIST_FILE = StampCardEasy/Info.plist;
