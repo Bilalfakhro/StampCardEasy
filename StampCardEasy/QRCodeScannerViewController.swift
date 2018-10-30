@@ -1,16 +1,16 @@
 //
-//  QRScannerViewController.swift
+//  QRCodeScannerViewController.swift
 //  StampCardEasy
 //
-//  Created by Bilal Fakhro on 2018-10-23.
+//  Created by Bilal Fakhro on 2018-10-30.
 //  Copyright © 2018 Bilal Fakhro. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class QRScannerViewController: UIViewController {
-    
+class QRCodeScannerViewController: UIViewController {
+
     @IBOutlet var messageLabel:UILabel!
     @IBOutlet var topbar: UIView!
     
@@ -123,7 +123,7 @@ class QRScannerViewController: UIViewController {
     
 }
 
-extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
+extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         // Check if the metadataObjects array is not nil and it contains at least one object.
@@ -148,13 +148,4 @@ extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
         }
     }
     
-    @IBAction func qrScannerBackToProfile(_ sender: AnyObject) {
-        print("Back Home!")
-        self.performSegue(withIdentifier: "qrScannerBackToProfileSegue", sender: self)
-    }
-    
-    @IBAction func qrCodeBackHome(_ sender: AnyObject) {
-        print("Back Home!")
-        self.performSegue(withIdentifier: "qrCodeBackHomeSegue", sender: self)
-    }
 }
