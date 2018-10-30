@@ -46,8 +46,6 @@ class MainViewController: UIViewController {
         print("button pressed")
         self.performSegue(withIdentifier: "infoSegue", sender: self)
     }
-    
-    // X-button from qrcodescanner view.
    
 }
 

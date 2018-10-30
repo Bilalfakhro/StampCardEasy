@@ -34,7 +34,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.sections.count
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,6 +50,13 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         cell.backgroundColor = .clear
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("TRYCK PÅ RAD \(indexPath.row)")
+        
+        // Förberedd övergången till SettingsListViewController
+        performSegue(withIdentifier: "itemDetailSegue", sender: indexPath.row)
     }
     
     // BackgroundColor and textColor

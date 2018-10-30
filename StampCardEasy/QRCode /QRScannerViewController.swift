@@ -56,7 +56,7 @@ class QRScannerViewController: UIViewController {
             captureSession.addOutput(captureMetadataOutput)
             
             // Set delegate and use the default dispatch queue to execute the call back
-            captureMetadataOutput.setMetadataObjectsDelegate(self as! AVCaptureMetadataOutputObjectsDelegate, queue: DispatchQueue.main)
+            captureMetadataOutput.setMetadataObjectsDelegate(self as AVCaptureMetadataOutputObjectsDelegate, queue: DispatchQueue.main)
             captureMetadataOutput.metadataObjectTypes = supportedCodeTypes
             // captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
             

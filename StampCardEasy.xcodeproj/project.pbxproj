@@ -20,6 +20,8 @@
 		DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */; };
 		DB6BE5D2217FE42B001C49B8 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5D0217FE42B001C49B8 /* QRCodeViewController.swift */; };
 		DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */; };
+		DB78E6D621878B010056267E /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D521878B010056267E /* SettingsListViewController.swift */; };
+		DB78E6D8218797BE0056267E /* itemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D7218797BE0056267E /* itemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
 		DB6BE5D0217FE42B001C49B8 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		DB78E6D521878B010056267E /* SettingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewController.swift; sourceTree = "<group>"; };
+		DB78E6D7218797BE0056267E /* itemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,19 +74,19 @@
 		DB2C62CD217FA7B700F40095 /* StampCardEasy */ = {
 			isa = PBXGroup;
 			children = (
-				DB2F08D821825DD3006BA147 /* QRCode  */,
 				DB2C62CE217FA7B700F40095 /* AppDelegate.swift */,
+				DB2F08D821825DD3006BA147 /* QRCode  */,
+				DB5F6C1621889CF50025BC9F /* Settings */,
 				DB2C62D0217FA7B700F40095 /* MainViewController.swift */,
 				DB2C62D2217FA7B700F40095 /* Main.storyboard */,
 				DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */,
 				DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */,
 				DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */,
 				DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */,
-				DB15FBB4217FDA9A00C97ADC /* SettingsViewController.swift */,
+				DB5F6BF02183D6400025BC9F /* HeaderCell.swift */,
 				DB2C62E0217FAA1800F40095 /* Assets.xcassets */,
 				DB2C62D7217FA7B800F40095 /* LaunchScreen.storyboard */,
 				DB2C62DA217FA7B800F40095 /* Info.plist */,
-				DB5F6BF02183D6400025BC9F /* HeaderCell.swift */,
 			);
 			path = StampCardEasy;
 			sourceTree = "<group>";
@@ -94,6 +98,16 @@
 				DB6BE5D0217FE42B001C49B8 /* QRCodeViewController.swift */,
 			);
 			path = "QRCode ";
+			sourceTree = "<group>";
+		};
+		DB5F6C1621889CF50025BC9F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DB78E6D7218797BE0056267E /* itemTableViewCell.swift */,
+				DB15FBB4217FDA9A00C97ADC /* SettingsViewController.swift */,
+				DB78E6D521878B010056267E /* SettingsListViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB78E6D8218797BE0056267E /* itemTableViewCell.swift in Sources */,
 				DB2C62D1217FA7B700F40095 /* MainViewController.swift in Sources */,
 				DB2C62CF217FA7B700F40095 /* AppDelegate.swift in Sources */,
 				DB2F08DA218389AE006BA147 /* infoPageControllViewController.swift in Sources */,
 				DB6BE5D2217FE42B001C49B8 /* QRCodeViewController.swift in Sources */,
 				DB5F6BF12183D6400025BC9F /* HeaderCell.swift in Sources */,
 				DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */,
+				DB78E6D621878B010056267E /* SettingsListViewController.swift in Sources */,
 				DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */,
 				DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */,
 				DB15FBB5217FDA9A00C97ADC /* SettingsViewController.swift in Sources */,

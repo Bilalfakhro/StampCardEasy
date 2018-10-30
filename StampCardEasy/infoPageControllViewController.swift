@@ -51,6 +51,5 @@ class infoPageControllViewController: UIViewController, UIScrollViewDelegate {
         print("Back Home!")
         self.performSegue(withIdentifier: "infoBackHomeSegue", sender: self)
     }
-    
 
 }
