@@ -34,7 +34,7 @@ class SettingsListViewController: UIViewController {
     }
     
     @IBAction func settingsListBackToSettings(_ sender: AnyObject) {
-        print("Back Home!")
+        print("Back to Settings!")
         self.performSegue(withIdentifier: "settingsItemBackToSettingsSegue", sender: self)
     }
 

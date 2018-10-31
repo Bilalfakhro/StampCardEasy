@@ -19,7 +19,7 @@ class AddPlaceViewController: UIViewController {
     }
 
     @IBAction func addPlaceToQR(_ sender: AnyObject) {
-        print("Back Home!")
+        print("Back to QRScanner!")
         self.performSegue(withIdentifier: "addPlaceToQRSegue", sender: self)
     }
     

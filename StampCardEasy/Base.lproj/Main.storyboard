@@ -659,6 +659,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addPlaceBackHome:" destination="MKh-QV-2zo" eventType="touchUpInside" id="5t6-Bi-qel"/>
+                                    <action selector="settingsBackHome:" destination="e8z-h9-feN" eventType="touchUpInside" id="Bt7-Kr-weR"/>
                                     <segue destination="poF-nF-iAQ" kind="presentation" identifier="settingsBackHomeSegue" animates="NO" id="aQV-aN-7AX"/>
                                 </connections>
                             </button>
@@ -729,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKz-Gv-T7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2277" y="861"/>
+            <point key="canvasLocation" x="2133" y="846"/>
         </scene>
         <!--Settings List View Controller-->
         <scene sceneID="bEE-wO-sfy">
@@ -1034,6 +1035,6 @@
         <segue reference="NpM-7Z-gzP"/>
         <segue reference="5t5-aQ-ctt"/>
         <segue reference="Xal-Ig-Zcc"/>
-        <segue reference="cqK-UU-Paa"/>
+        <segue reference="aQV-aN-7AX"/>
     </inferredMetricsTieBreakers>
 </document>
