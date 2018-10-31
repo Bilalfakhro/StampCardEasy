@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
     
     @IBOutlet weak var myTableView: UITableView!
+    @IBOutlet weak var settingsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
