@@ -1,0 +1,6 @@
+framework module Pods_StampCardEasy {
+  umbrella header "Pods-StampCardEasy-umbrella.h"
+
+  export *
+  module * { export * }
+}
