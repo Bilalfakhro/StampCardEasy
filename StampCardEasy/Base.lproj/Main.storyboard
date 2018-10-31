@@ -10,6 +10,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="mDE-Ef-e9Z">
+            <objects>
+                <viewController id="BH3-Ev-GNA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JeG-Qr-b5e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YyT-Dl-mKk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfR-P8-9Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="53"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="0Md-zH-gkT">
             <objects>
@@ -142,7 +157,7 @@
                                             <constraint firstAttribute="width" constant="100" id="H5a-h5-AT5"/>
                                             <constraint firstAttribute="height" constant="100" id="lPb-he-wgV"/>
                                         </constraints>
-                                        <state key="normal" image="wallet"/>
+                                        <state key="normal" image="logging-outx3"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="50"/>
@@ -162,13 +177,13 @@
                                             <segue destination="ks7-4R-Nsa" kind="presentation" identifier="purchaseSegue" animates="NO" id="Y2N-ZY-Ff6"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History Purchase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-5u-lxv">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-5u-lxv">
                                         <rect key="frame" x="234" y="511" width="100" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="6Sw-XZ-zSB"/>
                                             <constraint firstAttribute="width" constant="100" id="VVO-Uv-Bak"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -598,7 +613,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oy-zo-ud9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3071.1999999999998" y="425.93703148425789"/>
+            <point key="canvasLocation" x="1103" y="53"/>
         </scene>
         <!--Code View Controller-->
         <scene sceneID="cat-2u-4fs">
@@ -742,10 +757,10 @@
         <image name="background" width="2048" height="1536"/>
         <image name="focus" width="150" height="150"/>
         <image name="info" width="100" height="106.33333587646484"/>
+        <image name="logging-outx3" width="300" height="300"/>
         <image name="profile" width="100" height="100"/>
         <image name="qr-code" width="141.17646789550781" height="141.17646789550781"/>
         <image name="settings" width="100" height="100"/>
-        <image name="wallet" width="100" height="87.666664123535156"/>
         <namedColor name="BackgroundColor">
             <color red="0.97254901960784312" green="0.97254901960784312" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -762,6 +777,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="iF9-io-TRI"/>
         <segue reference="GR2-4f-djT"/>
-        <segue reference="ihE-Rm-s2g"/>
+        <segue reference="lcx-GO-rSK"/>
     </inferredMetricsTieBreakers>
 </document>
