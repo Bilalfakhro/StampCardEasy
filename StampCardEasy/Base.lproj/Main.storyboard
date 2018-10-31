@@ -342,28 +342,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lkr-Y2-fm2">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sZ-H2-zS2">
-                                <rect key="frame" x="16" y="36" width="85" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVC-3Q-Dmo">
+                                <rect key="frame" x="16" y="36" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="xFO-o9-8cZ"/>
-                                    <constraint firstAttribute="height" constant="45" id="zZG-2I-gas"/>
+                                    <constraint firstAttribute="width" constant="50" id="3Nn-VD-xg7"/>
+                                    <constraint firstAttribute="height" constant="50" id="uNV-Ij-tCY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleColor" name="TextColor-1"/>
+                                <state key="normal" image="menu-logo">
+                                    <color key="titleColor" name="TextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="addPlaceBackHome:" destination="MKh-QV-2zo" eventType="touchUpInside" id="MsM-bd-weT"/>
-                                    <segue destination="poF-nF-iAQ" kind="presentation" identifier="addPlaceBackHomeSegue" animates="NO" id="w4M-zu-42O"/>
+                                    <action selector="addPlaceBackHome:" destination="MKh-QV-2zo" eventType="touchUpInside" id="SNv-wu-AkB"/>
+                                    <segue destination="poF-nF-iAQ" kind="presentation" identifier="addPlaceBackHomeSegue" animates="NO" id="eTY-ev-ljr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="lkr-Y2-fm2" firstAttribute="top" secondItem="NZ4-1J-d8F" secondAttribute="top" id="0tt-jP-pLm"/>
+                            <constraint firstItem="TVC-3Q-Dmo" firstAttribute="leading" secondItem="NZ4-1J-d8F" secondAttribute="leading" constant="16" id="26s-kE-2my"/>
                             <constraint firstItem="lkr-Y2-fm2" firstAttribute="leading" secondItem="NZ4-1J-d8F" secondAttribute="leading" id="4L9-XZ-2PC"/>
                             <constraint firstItem="NZ4-1J-d8F" firstAttribute="bottom" secondItem="lkr-Y2-fm2" secondAttribute="bottom" id="94Z-O0-avX"/>
-                            <constraint firstItem="2sZ-H2-zS2" firstAttribute="top" secondItem="NZ4-1J-d8F" secondAttribute="top" constant="16" id="h8h-T6-vQ6"/>
-                            <constraint firstItem="2sZ-H2-zS2" firstAttribute="leading" secondItem="NZ4-1J-d8F" secondAttribute="leading" constant="16" id="qdn-LM-kP9"/>
+                            <constraint firstItem="TVC-3Q-Dmo" firstAttribute="top" secondItem="NZ4-1J-d8F" secondAttribute="top" constant="16" id="k7Y-5T-Zp0"/>
                             <constraint firstItem="NZ4-1J-d8F" firstAttribute="trailing" secondItem="lkr-Y2-fm2" secondAttribute="trailing" id="yT3-vu-EzS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NZ4-1J-d8F"/>
@@ -818,13 +817,10 @@
         <namedColor name="TextColor">
             <color red="0.098039215686274508" green="0.12549019607843137" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="TextColor-1">
-            <color red="0.098039215686274508" green="0.12549019607843137" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GR2-4f-djT"/>
-        <segue reference="Xal-Ig-Zcc"/>
-        <segue reference="cqK-UU-Paa"/>
+        <segue reference="qSc-Zo-Edz"/>
+        <segue reference="eTY-ev-ljr"/>
     </inferredMetricsTieBreakers>
 </document>
