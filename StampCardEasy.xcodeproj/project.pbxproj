@@ -73,11 +73,11 @@
 			isa = PBXGroup;
 			children = (
 				DB2C62CE217FA7B700F40095 /* AppDelegate.swift */,
-				DB2F08D821825DD3006BA147 /* QRCode  */,
 				DB2C62D0217FA7B700F40095 /* MainViewController.swift */,
 				DB2C62D2217FA7B700F40095 /* Main.storyboard */,
 				DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */,
 				DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */,
+				DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */,
 				DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */,
 				DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */,
 				DB78E6D521878B010056267E /* SettingsListViewController.swift */,
@@ -89,14 +89,6 @@
 				DB2C62DA217FA7B800F40095 /* Info.plist */,
 			);
 			path = StampCardEasy;
-			sourceTree = "<group>";
-		};
-		DB2F08D821825DD3006BA147 /* QRCode  */ = {
-			isa = PBXGroup;
-			children = (
-				DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */,
-			);
-			path = "QRCode ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
