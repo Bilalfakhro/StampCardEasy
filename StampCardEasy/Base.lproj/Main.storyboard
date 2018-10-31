@@ -459,30 +459,67 @@
                                     <segue destination="poF-nF-iAQ" kind="presentation" identifier="addPlaceBackHomeSegue" animates="NO" id="eTY-ev-ljr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8p-6o-6Ds">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8p-6o-6Ds">
                                 <rect key="frame" x="82" y="36" width="250" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LSl-7P-D8i"/>
+                                    <constraint firstAttribute="width" constant="250" id="f9Y-Wz-hI9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                 <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl9-6T-B5U" userLabel="Add Place">
+                                <rect key="frame" x="348" y="36" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.83209832080000001" blue="0.12563552589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fcG-eE-Igi"/>
+                                    <constraint firstAttribute="height" constant="50" id="pBT-Ie-wJf"/>
+                                </constraints>
+                                <state key="normal" image="add-button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPlaceToQR:" destination="MKh-QV-2zo" eventType="touchUpInside" id="1Qd-Ct-QM8"/>
+                                    <segue destination="y5l-OT-nii" kind="presentation" identifier="addPlaceToQRSegue" animates="NO" id="NpM-7Z-gzP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="lkr-Y2-fm2" firstAttribute="top" secondItem="NZ4-1J-d8F" secondAttribute="top" id="0tt-jP-pLm"/>
                             <constraint firstItem="TVC-3Q-Dmo" firstAttribute="leading" secondItem="NZ4-1J-d8F" secondAttribute="leading" constant="16" id="26s-kE-2my"/>
                             <constraint firstItem="lkr-Y2-fm2" firstAttribute="leading" secondItem="NZ4-1J-d8F" secondAttribute="leading" id="4L9-XZ-2PC"/>
+                            <constraint firstItem="Zl9-6T-B5U" firstAttribute="top" secondItem="NZ4-1J-d8F" secondAttribute="top" constant="16" id="4zD-pZ-IP6"/>
                             <constraint firstItem="NZ4-1J-d8F" firstAttribute="bottom" secondItem="lkr-Y2-fm2" secondAttribute="bottom" id="94Z-O0-avX"/>
+                            <constraint firstItem="G8p-6o-6Ds" firstAttribute="centerX" secondItem="8ue-Sh-8Db" secondAttribute="centerX" id="TEI-K6-pej"/>
                             <constraint firstItem="TVC-3Q-Dmo" firstAttribute="top" secondItem="NZ4-1J-d8F" secondAttribute="top" constant="16" id="k7Y-5T-Zp0"/>
+                            <constraint firstItem="NZ4-1J-d8F" firstAttribute="trailing" secondItem="Zl9-6T-B5U" secondAttribute="trailing" constant="16" id="pUa-gE-M9v"/>
+                            <constraint firstItem="G8p-6o-6Ds" firstAttribute="top" secondItem="NZ4-1J-d8F" secondAttribute="top" constant="16" id="vv1-ni-prB"/>
                             <constraint firstItem="NZ4-1J-d8F" firstAttribute="trailing" secondItem="lkr-Y2-fm2" secondAttribute="trailing" id="yT3-vu-EzS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NZ4-1J-d8F"/>
                     </view>
+                    <connections>
+                        <outlet property="addPlaceLabel" destination="G8p-6o-6Ds" id="Oes-y8-VJT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdm-9c-udd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3813.04347826087" y="52.989130434782609"/>
+            <point key="canvasLocation" x="3766.666666666667" y="52.989130434782609"/>
         </scene>
         <!--Info Page Controll View Controller-->
         <scene sceneID="VGI-HE-ODo">
@@ -975,8 +1012,9 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Aiz-yX-HYv"/>
+        <segue reference="NpM-7Z-gzP"/>
+        <segue reference="GR2-4f-djT"/>
         <segue reference="qSc-Zo-Edz"/>
-        <segue reference="W3z-su-E7p"/>
+        <segue reference="eTY-ev-ljr"/>
     </inferredMetricsTieBreakers>
 </document>
