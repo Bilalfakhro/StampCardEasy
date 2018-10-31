@@ -11,13 +11,11 @@ import UIKit
 class stampCardViewController: UIViewController {
     
     @IBOutlet weak var stampCardImage: UIImageView!
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,11 +29,6 @@ class stampCardViewController: UIViewController {
     }
     @IBAction func stampCardContact(_ sender: Any) {
     }
-    
-    
-    
-    
-    
     
     @IBAction func stampCardBackHome(_ sender: AnyObject) {
         print("Back Home!")
