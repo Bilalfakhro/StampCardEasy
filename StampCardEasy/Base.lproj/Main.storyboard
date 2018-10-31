@@ -90,8 +90,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="qrCodeButton:" destination="poF-nF-iAQ" eventType="touchUpInside" id="7Ov-Hr-Yew"/>
-                                            <segue destination="fAv-y4-D1b" kind="presentation" identifier="qrCodeSegue" animates="NO" id="iF9-io-TRI"/>
+                                            <action selector="qrScannerButton:" destination="poF-nF-iAQ" eventType="touchUpInside" id="ZWX-IS-1nT"/>
+                                            <segue destination="y5l-OT-nii" kind="presentation" identifier="qrCodeSegue" animates="NO" id="Yld-eP-3Xt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9Z-3J-BRI" userLabel="Add Place">
@@ -371,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdm-9c-udd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3783" y="79"/>
+            <point key="canvasLocation" x="3801" y="64"/>
         </scene>
         <!--Info Page Controll View Controller-->
         <scene sceneID="VGI-HE-ODo">
@@ -663,9 +663,6 @@
                                 <rect key="frame" x="132" y="293" width="150" height="150"/>
                                 <color key="tintColor" red="0.99215686270000003" green="0.81568627449999997" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="focus"/>
-                                <connections>
-                                    <segue destination="y5l-OT-nii" kind="presentation" identifier="" animates="NO" id="yMD-vg-L6d"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afP-E4-ZYg">
                                 <rect key="frame" x="108.66666666666669" y="95" width="197" height="68.666666666666686"/>
@@ -691,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hP-v8-UaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4584" y="78"/>
+            <point key="canvasLocation" x="4309" y="879"/>
         </scene>
         <!--Scanner View Controller-->
         <scene sceneID="Fn6-gH-sRj">
@@ -726,7 +723,6 @@
                                         </state>
                                         <connections>
                                             <action selector="qrCodeBackHome:" destination="fAv-y4-D1b" eventType="touchUpInside" id="T8x-3H-fYX"/>
-                                            <segue destination="fAv-y4-D1b" kind="presentation" identifier="scanBackQRCodeSegue" animates="NO" id="09u-HZ-Eav"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -749,10 +745,43 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScQ-bs-tnC">
+                                <rect key="frame" x="50" y="586" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LMM-59-Pxk"/>
+                                    <constraint firstAttribute="width" constant="60" id="QPP-jw-hZH"/>
+                                </constraints>
+                                <state key="normal" image="menu-logo">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="qrCodeBackHome:" destination="y5l-OT-nii" eventType="touchUpInside" id="RsC-mO-tr0"/>
+                                    <segue destination="poF-nF-iAQ" kind="presentation" identifier="qrCodeBackHomeSegue" animates="NO" id="cqK-UU-Paa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va3-bE-Sos">
+                                <rect key="frame" x="304" y="586" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="MGs-Gg-giQ"/>
+                                    <constraint firstAttribute="height" constant="60" id="erL-v4-z5m"/>
+                                </constraints>
+                                <state key="normal" image="profile">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="qrScannerBackToProfile:" destination="y5l-OT-nii" eventType="touchUpInside" id="1B9-tN-gqg"/>
+                                    <segue destination="Tgf-cM-N6l" kind="presentation" identifier="qrScannerBackToProfileSegue" animates="NO" id="Xal-Ig-Zcc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="bFR-B9-ot9" firstAttribute="top" secondItem="Va3-bE-Sos" secondAttribute="bottom" constant="50" id="9C3-pG-CS4"/>
+                            <constraint firstItem="bFR-B9-ot9" firstAttribute="top" secondItem="ScQ-bs-tnC" secondAttribute="bottom" constant="50" id="DZr-KF-kfs"/>
+                            <constraint firstItem="ScQ-bs-tnC" firstAttribute="leading" secondItem="Sff-Uf-jfD" secondAttribute="leading" constant="50" id="Iy3-Fn-pdP"/>
                             <constraint firstItem="LKL-D1-cMp" firstAttribute="top" secondItem="Sff-Uf-jfD" secondAttribute="top" id="NpE-Ug-myS"/>
                             <constraint firstItem="bFR-B9-ot9" firstAttribute="leading" secondItem="Sff-Uf-jfD" secondAttribute="leading" id="cqJ-yC-sPu"/>
+                            <constraint firstItem="Sff-Uf-jfD" firstAttribute="trailing" secondItem="Va3-bE-Sos" secondAttribute="trailing" constant="50" id="fG0-Qp-JRj"/>
                             <constraint firstItem="Sff-Uf-jfD" firstAttribute="trailing" secondItem="bFR-B9-ot9" secondAttribute="trailing" id="fqe-jN-uqL"/>
                             <constraint firstItem="LKL-D1-cMp" firstAttribute="leading" secondItem="wuj-4g-uYQ" secondAttribute="leading" id="q4j-c7-d5m"/>
                             <constraint firstItem="Sff-Uf-jfD" firstAttribute="bottom" secondItem="bFR-B9-ot9" secondAttribute="bottom" id="qBq-BI-KF2"/>
@@ -767,7 +796,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4d-1L-1a7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5403" y="77"/>
+            <point key="canvasLocation" x="4594" y="76"/>
         </scene>
     </scenes>
     <resources>
@@ -776,6 +805,7 @@
         <image name="focus" width="150" height="150"/>
         <image name="info" width="100" height="106.33333587646484"/>
         <image name="logging-outx3" width="300" height="300"/>
+        <image name="menu-logo" width="99" height="99"/>
         <image name="profile" width="100" height="100"/>
         <image name="qr-code" width="141.17646789550781" height="141.17646789550781"/>
         <image name="settings" width="100" height="100"/>
@@ -793,8 +823,8 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="09u-HZ-Eav"/>
-        <segue reference="5t5-aQ-ctt"/>
-        <segue reference="AK7-qC-vy2"/>
+        <segue reference="GR2-4f-djT"/>
+        <segue reference="Xal-Ig-Zcc"/>
+        <segue reference="cqK-UU-Paa"/>
     </inferredMetricsTieBreakers>
 </document>

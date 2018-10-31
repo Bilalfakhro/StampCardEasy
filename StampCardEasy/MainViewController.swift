@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     // QuickScanner Buttons on MainViewController
     @IBAction func qrScannerButton(_ sender: UIButton) {
         print("button pressed")
-        self.performSegue(withIdentifier: "qrScannerSegue", sender: self)
+        self.performSegue(withIdentifier: "qrCodeSegue", sender: self)
     }
     // Add a Place Buttons on MainViewController
     @IBAction func addPlaceButton(_ sender: UIButton){

@@ -149,7 +149,7 @@ extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
     }
     
     @IBAction func qrScannerBackToProfile(_ sender: AnyObject) {
-        print("Back Home!")
+        print("Back to Profile!")
         self.performSegue(withIdentifier: "qrScannerBackToProfileSegue", sender: self)
     }
     
