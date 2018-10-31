@@ -13,14 +13,18 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var profileNameTextfield: UITextField!
     @IBOutlet weak var profileEmailTextfield: UITextField!
-
+    @IBOutlet weak var profileCityTextfield: UITextField!
+    @IBOutlet weak var profileLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func profileSettingsButton(_ sender: Any) {
+      
+        
     }
     @IBAction func profileLogoutButton(_ sender: Any) {
     }
