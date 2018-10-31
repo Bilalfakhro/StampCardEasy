@@ -11,6 +11,7 @@ import UIKit
 class SettingsListViewController: UIViewController {
 
     @IBOutlet weak var itemTextField: UITextField!
+    @IBOutlet weak var settingsListLabel: UILabel!
     
     var allItems = [String]()
     var currentItemNumber = 0
@@ -34,7 +35,7 @@ class SettingsListViewController: UIViewController {
     
     @IBAction func settingsListBackToSettings(_ sender: AnyObject) {
         print("Back Home!")
-        self.performSegue(withIdentifier: "settingsItemBackToSettingSegue", sender: self)
+        self.performSegue(withIdentifier: "settingsItemBackToSettingsSegue", sender: self)
     }
 
 }
