@@ -12,6 +12,7 @@ class infoPageControllViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var pageControll: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var infoLabel: UILabel!
     
     var images: [String] = ["0", "1", "2"]
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
