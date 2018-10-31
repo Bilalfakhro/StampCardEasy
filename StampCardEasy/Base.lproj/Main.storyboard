@@ -17,13 +17,31 @@
                     <view key="view" contentMode="scaleToFill" id="JeG-Qr-b5e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-Pf-ZBv">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTy-zj-itz">
+                                <rect key="frame" x="78" y="163" width="262" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YyT-Dl-mKk" firstAttribute="trailing" secondItem="Os7-Pf-ZBv" secondAttribute="trailing" id="9tR-V5-TXz"/>
+                            <constraint firstItem="YyT-Dl-mKk" firstAttribute="bottom" secondItem="Os7-Pf-ZBv" secondAttribute="bottom" id="BcL-9F-bh8"/>
+                            <constraint firstItem="Os7-Pf-ZBv" firstAttribute="leading" secondItem="YyT-Dl-mKk" secondAttribute="leading" id="EK1-52-BKe"/>
+                            <constraint firstItem="Os7-Pf-ZBv" firstAttribute="top" secondItem="YyT-Dl-mKk" secondAttribute="top" id="WYf-YE-d3u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YyT-Dl-mKk"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfR-P8-9Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="53"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="-43.206521739130437"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="0Md-zH-gkT">
