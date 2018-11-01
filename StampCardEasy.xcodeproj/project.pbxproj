@@ -16,13 +16,12 @@
 		DB2C62E1217FAA1900F40095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62E0217FAA1800F40095 /* Assets.xcassets */; };
 		DB2F08DA218389AE006BA147 /* infoPageControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */; };
 		DB36FE80218A48F600E5A0EA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */; };
-		DB5F6BF12183D6400025BC9F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5F6BF02183D6400025BC9F /* HeaderCell.swift */; };
 		DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */; };
-		DB6BE5C9217FDD90001C49B8 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */; };
 		DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */; };
 		DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */; };
 		DB78E6D621878B010056267E /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D521878B010056267E /* SettingsListViewController.swift */; };
 		DB78E6D8218797BE0056267E /* itemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D7218797BE0056267E /* itemTableViewCell.swift */; };
+		DBBBF411218AF8C000A0D208 /* stampCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBBF410218AF8C000A0D208 /* stampCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +38,12 @@
 		DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPageControllViewController.swift; sourceTree = "<group>"; };
 		DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		DB36FE81218A4EFD00E5A0EA /* StampCardEasy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StampCardEasy-Bridging-Header.h"; sourceTree = "<group>"; };
-		DB5F6BF02183D6400025BC9F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
 		DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		DB78E6D521878B010056267E /* SettingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewController.swift; sourceTree = "<group>"; };
 		DB78E6D7218797BE0056267E /* itemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemTableViewCell.swift; sourceTree = "<group>"; };
+		DBBBF410218AF8C000A0D208 /* stampCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stampCardViewController.swift; sourceTree = "<group>"; };
 		F2F1D5707A36AFC9896B03FB /* Pods-StampCardEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StampCardEasy.release.xcconfig"; path = "Pods/Target Support Files/Pods-StampCardEasy/Pods-StampCardEasy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,15 +94,14 @@
 				DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */,
 				DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */,
 				DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */,
-				DB6BE5C8217FDD90001C49B8 /* PurchaseViewController.swift */,
 				DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */,
 				DB78E6D7218797BE0056267E /* itemTableViewCell.swift */,
 				DB78E6D521878B010056267E /* SettingsListViewController.swift */,
 				DB15FBB4217FDA9A00C97ADC /* SettingsViewController.swift */,
+				DBBBF410218AF8C000A0D208 /* stampCardViewController.swift */,
 				DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */,
 				DB2C62E0217FAA1800F40095 /* Assets.xcassets */,
 				DB2C62D7217FA7B800F40095 /* LaunchScreen.storyboard */,
-				DB5F6BF02183D6400025BC9F /* HeaderCell.swift */,
 				DB2C62DA217FA7B800F40095 /* Info.plist */,
 				DB36FE81218A4EFD00E5A0EA /* StampCardEasy-Bridging-Header.h */,
 			);
@@ -263,13 +260,12 @@
 				DB36FE80218A48F600E5A0EA /* LogInViewController.swift in Sources */,
 				DB2C62CF217FA7B700F40095 /* AppDelegate.swift in Sources */,
 				DB2F08DA218389AE006BA147 /* infoPageControllViewController.swift in Sources */,
-				DB5F6BF12183D6400025BC9F /* HeaderCell.swift in Sources */,
 				DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */,
+				DBBBF411218AF8C000A0D208 /* stampCardViewController.swift in Sources */,
 				DB78E6D621878B010056267E /* SettingsListViewController.swift in Sources */,
 				DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */,
 				DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */,
 				DB15FBB5217FDA9A00C97ADC /* SettingsViewController.swift in Sources */,
-				DB6BE5C9217FDD90001C49B8 /* PurchaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

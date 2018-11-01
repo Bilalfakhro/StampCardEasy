@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BH3-Ev-GNA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="poF-nF-iAQ">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,19 +32,21 @@
                                     <action selector="letsLogin:" destination="BH3-Ev-GNA" eventType="touchUpInside" id="Jjc-vv-kTB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTy-zj-itz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTy-zj-itz">
                                 <rect key="frame" x="76" y="284" width="262" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKc-6E-OS2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKc-6E-OS2">
                                 <rect key="frame" x="76" y="363" width="262" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtc-Jl-3bZ">
                                 <rect key="frame" x="76" y="450" width="262" height="57"/>
@@ -730,7 +732,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKz-Gv-T7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2133" y="846"/>
+            <point key="canvasLocation" x="2270" y="850"/>
         </scene>
         <!--Settings List View Controller-->
         <scene sceneID="bEE-wO-sfy">
@@ -819,107 +821,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAA-qh-fPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3069.5652173913045" y="860.86956521739137"/>
-        </scene>
-        <!--Purchase View Controller-->
-        <scene sceneID="jOF-P5-6p9">
-            <objects>
-                <viewController storyboardIdentifier="PurchaseViewController" id="ks7-4R-Nsa" customClass="PurchaseViewController" customModule="StampCardEasy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CFy-FN-6Kp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="f95-Qt-4tj">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5m-UM-iYh">
-                                <rect key="frame" x="82" y="41" width="250" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
-                                <color key="textColor" name="TextColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="f95-Qt-4tj" firstAttribute="top" secondItem="3zg-1h-ICh" secondAttribute="top" id="9s5-2T-rZX"/>
-                            <constraint firstItem="3zg-1h-ICh" firstAttribute="trailing" secondItem="f95-Qt-4tj" secondAttribute="trailing" id="GX9-qL-Ezk"/>
-                            <constraint firstItem="f95-Qt-4tj" firstAttribute="leading" secondItem="3zg-1h-ICh" secondAttribute="leading" id="pTe-so-foe"/>
-                            <constraint firstItem="3zg-1h-ICh" firstAttribute="bottom" secondItem="f95-Qt-4tj" secondAttribute="bottom" id="vo2-9N-AaO"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="3zg-1h-ICh"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Oy-zo-ud9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1555" y="1537"/>
-        </scene>
-        <!--Code View Controller-->
-        <scene sceneID="cat-2u-4fs">
-            <objects>
-                <viewController storyboardIdentifier="QRCodeViewController" id="fAv-y4-D1b" customClass="QRCodeViewController" customModule="StampCardEasy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uY8-Rn-GyD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-n5-tI3">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPd-KP-V0D">
-                                <rect key="frame" x="10" y="30" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="menu-logo">
-                                    <color key="titleColor" name="TextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="addPlaceBackHome:" destination="MKh-QV-2zo" eventType="touchUpInside" id="BLe-kb-Spf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Low-yk-Ka2">
-                                <rect key="frame" x="15" y="158" width="85" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleColor" name="TextColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeK-Qt-nX1">
-                                <rect key="frame" x="132" y="293" width="150" height="150"/>
-                                <color key="tintColor" red="0.99215686270000003" green="0.81568627449999997" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="focus"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afP-E4-ZYg">
-                                <rect key="frame" x="108.66666666666669" y="95" width="197" height="68.666666666666686"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="50"/>
-                                <color key="textColor" red="0.99215686270000003" green="0.81568627449999997" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg8-6C-jUs">
-                                <rect key="frame" x="82" y="37" width="250" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
-                                <color key="textColor" name="TextColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="EeK-Qt-nX1" firstAttribute="centerY" secondItem="uY8-Rn-GyD" secondAttribute="centerY" id="7lL-La-dkm"/>
-                            <constraint firstItem="afP-E4-ZYg" firstAttribute="centerX" secondItem="byL-Yd-qBF" secondAttribute="centerX" id="Dxf-K9-lf9"/>
-                            <constraint firstItem="byL-Yd-qBF" firstAttribute="trailing" secondItem="2YF-n5-tI3" secondAttribute="trailing" id="N4G-gR-I3T"/>
-                            <constraint firstItem="afP-E4-ZYg" firstAttribute="top" secondItem="byL-Yd-qBF" secondAttribute="top" constant="75" id="QuO-i9-79R"/>
-                            <constraint firstItem="2YF-n5-tI3" firstAttribute="top" secondItem="byL-Yd-qBF" secondAttribute="top" id="UUT-yP-VgM"/>
-                            <constraint firstItem="2YF-n5-tI3" firstAttribute="leading" secondItem="byL-Yd-qBF" secondAttribute="leading" id="ev4-OI-Qw1"/>
-                            <constraint firstItem="byL-Yd-qBF" firstAttribute="bottom" secondItem="2YF-n5-tI3" secondAttribute="bottom" id="foh-Fb-HwJ"/>
-                            <constraint firstItem="EeK-Qt-nX1" firstAttribute="centerX" secondItem="byL-Yd-qBF" secondAttribute="centerX" id="h7N-94-axy"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="byL-Yd-qBF"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6hP-v8-UaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="549" y="796"/>
         </scene>
         <!--Scanner View Controller-->
         <scene sceneID="Fn6-gH-sRj">
@@ -1011,14 +912,133 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4d-1L-1a7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4594" y="76"/>
+            <point key="canvasLocation" x="4594" y="53"/>
+        </scene>
+        <!--Stamp Card View Controller-->
+        <scene sceneID="WEx-GP-5tC">
+            <objects>
+                <viewController storyboardIdentifier="stampCardViewController" id="yIw-tV-tyM" customClass="stampCardViewController" customModule="StampCardEasy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJD-pg-DG3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="C5L-PL-eXo">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dQ-HD-ZSu" userLabel="Logout Button">
+                                <rect key="frame" x="117" y="636" width="180" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="ZBb-F5-zQf"/>
+                                    <constraint firstAttribute="height" constant="50" id="bKT-HH-SH9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButton:" destination="yIw-tV-tyM" eventType="touchUpInside" id="ipS-aq-Yzd"/>
+                                    <action selector="profileLogoutButton:" destination="Tgf-cM-N6l" eventType="touchUpInside" id="t3v-Wk-S9O"/>
+                                    <action selector="qrScannerButton:" destination="poF-nF-iAQ" eventType="touchUpInside" id="V1U-xA-6wF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTS-aM-VOU">
+                                <rect key="frame" x="16" y="36" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ffW-Cq-o5D"/>
+                                    <constraint firstAttribute="width" constant="50" id="n7s-5l-CW1"/>
+                                </constraints>
+                                <state key="normal" image="menu-logo">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="qrCodeBackHome:" destination="y5l-OT-nii" eventType="touchUpInside" id="25i-64-6L3"/>
+                                    <action selector="stampCardBackHome:" destination="yIw-tV-tyM" eventType="touchUpInside" id="NtM-vn-saS"/>
+                                    <segue destination="poF-nF-iAQ" kind="presentation" identifier="stampCardBackHomeSegue" animates="NO" id="W8x-Xf-Smi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="piN-2C-bYj">
+                                <rect key="frame" x="57" y="150" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="eKY-8D-qXg"/>
+                                    <constraint firstAttribute="width" constant="300" id="usQ-RG-6ND"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7w-Ji-vpE">
+                                <rect key="frame" x="57" y="566" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="E2G-cC-F4i"/>
+                                    <constraint firstAttribute="height" constant="50" id="agz-0d-ZeT"/>
+                                </constraints>
+                                <state key="normal" image="facebook">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="stampCardFacebook:" destination="yIw-tV-tyM" eventType="touchUpInside" id="lTQ-Gi-XDJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIn-C6-dMd">
+                                <rect key="frame" x="182" y="566" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Qu6-MM-EWo"/>
+                                    <constraint firstAttribute="height" constant="50" id="Xv3-82-DKp"/>
+                                </constraints>
+                                <state key="normal" image="instagram">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="stampCardInstagram:" destination="yIw-tV-tyM" eventType="touchUpInside" id="IE8-Vz-Fdq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJb-Vm-An6">
+                                <rect key="frame" x="307" y="566" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G09-j4-cqf"/>
+                                    <constraint firstAttribute="width" constant="50" id="stF-0g-yl4"/>
+                                </constraints>
+                                <state key="normal" image="contact">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="stampCardContact:" destination="yIw-tV-tyM" eventType="touchUpInside" id="QQE-zi-dz3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="4Db-mH-fbe" firstAttribute="bottom" secondItem="HJb-Vm-An6" secondAttribute="bottom" constant="120" id="3Iq-UY-SyR"/>
+                            <constraint firstItem="C5L-PL-eXo" firstAttribute="top" secondItem="4Db-mH-fbe" secondAttribute="top" id="5HK-wa-6Eu"/>
+                            <constraint firstItem="piN-2C-bYj" firstAttribute="centerX" secondItem="iJD-pg-DG3" secondAttribute="centerX" id="CRN-k3-r6r"/>
+                            <constraint firstItem="C5L-PL-eXo" firstAttribute="leading" secondItem="4Db-mH-fbe" secondAttribute="leading" id="FSc-kk-LKs"/>
+                            <constraint firstItem="6dQ-HD-ZSu" firstAttribute="centerX" secondItem="iJD-pg-DG3" secondAttribute="centerX" id="GTg-bb-6Yp"/>
+                            <constraint firstItem="6dQ-HD-ZSu" firstAttribute="top" secondItem="TIn-C6-dMd" secondAttribute="bottom" constant="20" id="JLc-QQ-2zR"/>
+                            <constraint firstItem="aTS-aM-VOU" firstAttribute="top" secondItem="4Db-mH-fbe" secondAttribute="top" constant="16" id="PQr-Bd-EZ0"/>
+                            <constraint firstItem="aTS-aM-VOU" firstAttribute="leading" secondItem="4Db-mH-fbe" secondAttribute="leading" constant="16" id="ag7-ke-o1s"/>
+                            <constraint firstItem="4Db-mH-fbe" firstAttribute="bottom" secondItem="6dQ-HD-ZSu" secondAttribute="bottom" constant="50" id="c0N-OQ-wc0"/>
+                            <constraint firstItem="HJb-Vm-An6" firstAttribute="leading" secondItem="TIn-C6-dMd" secondAttribute="trailing" constant="75" id="ffq-wt-PPb"/>
+                            <constraint firstItem="4Db-mH-fbe" firstAttribute="bottom" secondItem="m7w-Ji-vpE" secondAttribute="bottom" constant="120" id="hZA-qo-hQF"/>
+                            <constraint firstItem="4Db-mH-fbe" firstAttribute="trailing" secondItem="C5L-PL-eXo" secondAttribute="trailing" id="idB-W8-fjU"/>
+                            <constraint firstItem="TIn-C6-dMd" firstAttribute="centerX" secondItem="iJD-pg-DG3" secondAttribute="centerX" id="mE4-le-0De"/>
+                            <constraint firstItem="piN-2C-bYj" firstAttribute="top" secondItem="4Db-mH-fbe" secondAttribute="top" constant="130" id="qOo-kZ-7pv"/>
+                            <constraint firstItem="4Db-mH-fbe" firstAttribute="bottom" secondItem="C5L-PL-eXo" secondAttribute="bottom" id="rLM-Yn-3Z0"/>
+                            <constraint firstItem="TIn-C6-dMd" firstAttribute="leading" secondItem="m7w-Ji-vpE" secondAttribute="trailing" constant="75" id="uJb-EO-1nY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Db-mH-fbe"/>
+                    </view>
+                    <connections>
+                        <outlet property="stampCardImage" destination="piN-2C-bYj" id="ts5-XU-Q8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOw-bv-VNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5367" y="53"/>
         </scene>
     </scenes>
     <resources>
         <image name="add-button" width="100" height="100"/>
         <image name="background" width="2048" height="1536"/>
-        <image name="focus" width="150" height="150"/>
+        <image name="contact" width="205" height="202"/>
+        <image name="facebook" width="225" height="225"/>
         <image name="info" width="100" height="106.33333587646484"/>
+        <image name="instagram" width="680" height="680"/>
         <image name="logging-outx3" width="300" height="300"/>
         <image name="menu-logo" width="99" height="99"/>
         <image name="profile" width="100" height="100"/>
@@ -1032,8 +1052,8 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NpM-7Z-gzP"/>
-        <segue reference="5t5-aQ-ctt"/>
+        <segue reference="Yld-eP-3Xt"/>
+        <segue reference="Aiz-yX-HYv"/>
         <segue reference="Xal-Ig-Zcc"/>
         <segue reference="aQV-aN-7AX"/>
     </inferredMetricsTieBreakers>

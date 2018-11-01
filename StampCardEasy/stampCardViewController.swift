@@ -35,4 +35,7 @@ class stampCardViewController: UIViewController {
         self.performSegue(withIdentifier: "stampCardBackHomeSegue", sender: self)
     }
     
+    @IBAction func logoutButton(_ sender: Any) {
+    }
+    
 }

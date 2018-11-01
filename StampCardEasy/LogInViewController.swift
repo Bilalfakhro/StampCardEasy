@@ -10,17 +10,13 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-
 class LogInViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
-    
-    
-    
-    
+
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
