@@ -10,7 +10,7 @@ import UIKit
 
 class SettingsListViewController: UIViewController {
 
-    @IBOutlet weak var itemTextField: UITextField!
+    @IBOutlet weak var itemTextfield: UITextField!
     @IBOutlet weak var settingsListLabel: UILabel!
     
     var allItems = [String]()
@@ -20,22 +20,22 @@ class SettingsListViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        itemTextField.text = allItems[currentItemNumber]
+        itemTextfield.text = allItems[currentItemNumber]
     }
     
     @IBAction func saveItem(_ sender: Any) {
         
-        allItems[currentItemNumber] = itemTextField.text!
+ //       allItems[currentItemNumber] = itemTextField.text!
         
-        UserDefaults.standard.set(allItems, forKey: "items")
-        
+ //       UserDefaults.standard.set(allItems, forKey: "items")
+ 
         // Tryck på knappen change och gå tillbaka till viewcontroller
-        navigationController?.popToRootViewController(animated: true)
+//        navigationController?.popToRootViewController(animated: true)
     }
     
-    @IBAction func settingsListBackToSettings(_ sender: AnyObject) {
+    @IBAction func listBackToSettings(_ sender: AnyObject) {
         print("Back to Settings!")
-        self.performSegue(withIdentifier: "settingsItemBackToSettingsSegue", sender: self)
+        self.performSegue(withIdentifier: "listBackToSettingsSegue", sender: self)
     }
 
 }

@@ -10,12 +10,11 @@ import UIKit
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
-   let sections = ["Your Details", "Your Prefereces", "Your Account", "Information"]
-   let items = [
+   let sections = ["Your Details", "Your Account", "Information"]
+    var items = [
         ["Name", "Email", "Birth Date", "Phone Number", "City"], // Your Details.
-        ["Date Format", "Distans Settings", "Around Me Distance"], // Your Details.
-        ["Privacy Policy (GDPR)", "User Terms & Conditions", "Request Personal Data", "Deactivate & Delete Personal Data", "Change Password", "Logout"], // Your Account.
-        ["App Version", "How It Works", "Refer A Business", "Feedback / Contact Us", "FAQ´s"]] // Your Details.
+        ["Privacy Policy (GDPR)", "Deactivate & Delete Personal Data", "Logout"], // Your Account.
+        ["App Version", "Feedback / Contact Us"]] // Information.
 
     
     @IBOutlet weak var myTableView: UITableView!
@@ -78,6 +77,16 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBAction func settingsBackHome(_ sender: AnyObject) {
         print("Back Home!")
         self.performSegue(withIdentifier: "settingsBackHomeSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let dest = segue.destination as! SettingsListViewController
+        
+        dest.allItems = items.
+        dest.currentItemNumber = sender as! Int
+        
+        
     }
     
 }

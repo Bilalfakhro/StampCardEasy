@@ -32,10 +32,12 @@ class LogInViewController: UIViewController {
             print("LOGGED IN")
             loginButton.setTitle("Logout", for: .normal)
             getUserName()
+            
         } else {
             print("NOT LOGGED IN")
             loginButton.setTitle("Login", for: .normal)
         }
+        
     }
     
     @IBAction func letsLogin(_ sender: Any) {
