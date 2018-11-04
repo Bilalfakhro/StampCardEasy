@@ -25,12 +25,12 @@ class SettingsListViewController: UIViewController {
     
     @IBAction func saveItem(_ sender: Any) {
         
- //       allItems[currentItemNumber] = itemTextField.text!
+        allItems[currentItemNumber] = itemTextfield.text!
         
- //       UserDefaults.standard.set(allItems, forKey: "items")
+        UserDefaults.standard.set(allItems, forKey: "items")
  
-        // Tryck på knappen change och gå tillbaka till viewcontroller
-//        navigationController?.popToRootViewController(animated: true)
+        // Tryck på knappen SAVE och gå tillbaka till SettingsViewcontroller.
+        navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func listBackToSettings(_ sender: AnyObject) {
