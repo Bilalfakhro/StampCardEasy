@@ -105,7 +105,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         let dest = segue.destination as! SettingsListViewController
        
-        dest.allItems = sender as! [String]
+   //     dest.allItems = sender as! [String]
         dest.currentItemNumber = sender as! Int
 
         

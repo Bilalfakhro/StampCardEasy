@@ -9,7 +9,13 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var qrScanner: UIButton!
+    @IBOutlet weak var profile: UIButton!
+    @IBOutlet weak var settings: UIButton!
+    @IBOutlet weak var loggout: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,33 +25,28 @@ class MainViewController: UIViewController {
     // QuickScanner Buttons on MainViewController
     @IBAction func qrScannerButton(_ sender: UIButton) {
         print("button pressed")
-        self.performSegue(withIdentifier: "qrCodeScannerSegue", sender: self)
+        self.performSegue(withIdentifier: "qrScannerSegue", sender: self)
     }
-    // Add a Place Buttons on MainViewController
-    @IBAction func addPlaceButton(_ sender: UIButton){
-        print("button pressed")
-        self.performSegue(withIdentifier: "addPlaceSegue", sender: self)
-    }
+    
     // Profile Buttons on MainViewController
-    @IBAction func profileButton(_ sender: UIButton) {
-        print("button pressed")
-        self.performSegue(withIdentifier: "profileSegue", sender: self)
+    @IBAction func profileButton(_ sender: Any) {
+    
+    print("Profile Button pressed")
+    self.performSegue(withIdentifier: "profileSegue", sender: self)
     }
-    // Purchase Buttons on MainViewController
-    @IBAction func purchaseButton(_ sender: UIButton) {
-        print("button pressed")
-        self.performSegue(withIdentifier: "purchaseSegue", sender: self)
-    }
+    
     // Settings Buttons on MainViewController
-    @IBAction func settingsButton(_ sender: UIButton) {
-        print("button pressed")
-        self.performSegue(withIdentifier: "settingsSegue", sender: self)
+    @IBAction func settingsButton(_ sender: Any) {
+    
+    print("Settings Button pressed")
+    self.performSegue(withIdentifier: "settingsSegue", sender: self)
     }
-    // Info Buttons on MainViewController
-    @IBAction func infoButton(_ sender: UIButton) {
-        print("button pressed")
-        self.performSegue(withIdentifier: "infoSegue", sender: self)
+    
+    
+    @IBAction func loggoutButton(_ sender: Any) {
+    
+     print("Loggout Button pressed")
+    self.performSegue(withIdentifier: "loggoutSegue", sender: self)
     }
-   
 }
 

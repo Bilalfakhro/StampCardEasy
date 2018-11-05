@@ -24,9 +24,13 @@ class ProfileViewController: UIViewController {
     
     @IBAction func profileSettingsButton(_ sender: Any) {
       
-        
+        print("Back Home!")
+        self.performSegue(withIdentifier: "profileBackToSettingsSegue", sender: self)
     }
     @IBAction func profileLogoutButton(_ sender: Any) {
+        
+        print("Loggout Button pressed")
+        self.performSegue(withIdentifier: "loggoutSegue", sender: self)
     }
     
     // BACK HOME

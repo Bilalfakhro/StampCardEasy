@@ -14,10 +14,8 @@
 		DB2C62D4217FA7B700F40095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62D2217FA7B700F40095 /* Main.storyboard */; };
 		DB2C62D9217FA7B800F40095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62D7217FA7B800F40095 /* LaunchScreen.storyboard */; };
 		DB2C62E1217FAA1900F40095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62E0217FAA1800F40095 /* Assets.xcassets */; };
-		DB2F08DA218389AE006BA147 /* infoPageControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */; };
 		DB36FE80218A48F600E5A0EA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */; };
 		DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */; };
-		DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */; };
 		DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */; };
 		DB78E6D621878B010056267E /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D521878B010056267E /* SettingsListViewController.swift */; };
 		DB78E6D8218797BE0056267E /* itemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D7218797BE0056267E /* itemTableViewCell.swift */; };
@@ -35,11 +33,9 @@
 		DB2C62D8217FA7B800F40095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB2C62DA217FA7B800F40095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB2C62E0217FAA1800F40095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPageControllViewController.swift; sourceTree = "<group>"; };
 		DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		DB36FE81218A4EFD00E5A0EA /* StampCardEasy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StampCardEasy-Bridging-Header.h"; sourceTree = "<group>"; };
 		DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
 		DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		DB78E6D521878B010056267E /* SettingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewController.swift; sourceTree = "<group>"; };
 		DB78E6D7218797BE0056267E /* itemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,8 +87,6 @@
 				DB2C62CE217FA7B700F40095 /* AppDelegate.swift */,
 				DB2C62D0217FA7B700F40095 /* MainViewController.swift */,
 				DB2C62D2217FA7B700F40095 /* Main.storyboard */,
-				DB6BE5CA217FDE38001C49B8 /* AddPlaceViewController.swift */,
-				DB2F08D9218389AE006BA147 /* infoPageControllViewController.swift */,
 				DB78E6D7218797BE0056267E /* itemTableViewCell.swift */,
 				DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */,
 				DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */,
@@ -259,8 +253,6 @@
 				DB2C62D1217FA7B700F40095 /* MainViewController.swift in Sources */,
 				DB36FE80218A48F600E5A0EA /* LogInViewController.swift in Sources */,
 				DB2C62CF217FA7B700F40095 /* AppDelegate.swift in Sources */,
-				DB2F08DA218389AE006BA147 /* infoPageControllViewController.swift in Sources */,
-				DB6BE5CB217FDE38001C49B8 /* AddPlaceViewController.swift in Sources */,
 				DBBBF411218AF8C000A0D208 /* stampCardViewController.swift in Sources */,
 				DB78E6D621878B010056267E /* SettingsListViewController.swift in Sources */,
 				DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */,

@@ -9,7 +9,6 @@
 import UIKit
 
 class itemTableViewCell: UITableViewCell {
-
     
     @IBOutlet weak var itemNameLabel: UILabel!
     

@@ -186,19 +186,19 @@ class stampCardViewController: UIViewController {
 
 
     @IBAction func stampCardFacebook(_ sender: Any) {
-        print("Hej")
+        print("Facebook")
         
     }
     @IBAction func stampCardInstagram(_ sender: Any) {
-        print("Hej")
+        print("Instagram")
     }
     @IBAction func stampCardContact(_ sender: Any) {
-        print("Hej")
+        print("Contact")
     }
     
     @IBAction func stampCardBackHome(_ sender: AnyObject) {
         print("Back Home!")
-        self.performSegue(withIdentifier: "stampCardBackHomeSegue", sender: self)
+        self.performSegue(withIdentifier: "stampBackHome", sender: self)
     }
     
     @IBAction func logoutButton(_ sender: Any) {
