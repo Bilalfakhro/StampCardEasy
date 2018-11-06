@@ -100,15 +100,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         print("Back Home!")
         self.performSegue(withIdentifier: "settingsBackHomeSegue", sender: self)
     }
-    
+  /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let dest = segue.destination as! SettingsListViewController
        
-   //     dest.allItems = sender as! [String]
+        dest.allItems = theItems
         dest.currentItemNumber = sender as! Int
-
-        
-    }
-    
+    }  */
 }

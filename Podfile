@@ -9,6 +9,16 @@ target 'StampCardEasy' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
-    
+  pod 'FirebaseUI/Facebook'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Crash'
+  pod 'Firebase/Messaging'
+  pod 'FirebaseUI/Storage'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  
 
 end
