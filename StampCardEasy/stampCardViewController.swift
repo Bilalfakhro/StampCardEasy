@@ -196,9 +196,9 @@ class stampCardViewController: UIViewController {
         print("Contact")
     }
     
-    @IBAction func stampCardBackHome(_ sender: AnyObject) {
+    @IBAction func stampCardBackHome(_ sender: Any) {
         print("Back Home!")
-        self.performSegue(withIdentifier: "stampBackHome", sender: self)
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBAction func logoutButton(_ sender: Any) {

@@ -34,9 +34,9 @@ class ProfileViewController: UIViewController {
     }
     
     // BACK HOME
-    @IBAction func profileBackHome(_ sender: AnyObject){
+    @IBAction func profileBackHome(_ sender: Any){
         print("Back Home")
-        self.performSegue(withIdentifier: "profileBackHomeSegue", sender: self)
+        self.dismiss(animated: false, completion: nil)
     }
     
 }

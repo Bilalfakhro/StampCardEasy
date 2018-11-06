@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1N9-qu-q2k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="poF-nF-iAQ">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Protected View Controller-->
+        <scene sceneID="i5O-Dg-S4v">
+            <objects>
+                <viewController storyboardIdentifier="ProtectedViewController" id="ScM-22-zWy" customClass="ProtectedViewController" customModule="StampCardEasy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWx-Zs-z9L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Protected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3M-rk-kJh">
+                                <rect key="frame" x="20" y="83" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a1k-Ex-B2A"/>
+                    </view>
+                    <connections>
+                        <segue destination="1N9-qu-q2k" kind="presentation" identifier="loginViewSegue" animates="NO" id="Jet-wF-l2J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZ1-oR-tjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2033" y="50"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="s5E-3F-dek">
             <objects>
@@ -231,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7W-Sg-7c4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-380" y="50"/>
+            <point key="canvasLocation" x="-504" y="50"/>
         </scene>
         <!--Profile Page View Controller-->
         <scene sceneID="l4P-D2-NGp">
@@ -345,7 +372,6 @@
                         <viewLayoutGuide key="safeArea" id="YyT-Dl-mKk"/>
                     </view>
                     <connections>
-                        <outlet property="cityLabel" destination="rtc-Jl-3bZ" id="9Xx-wL-wSg"/>
                         <outlet property="emailLabel" destination="hKc-6E-OS2" id="Ypm-GY-Axp"/>
                         <outlet property="loginButton" destination="ziF-Hy-SA0" id="AI2-Ha-EbV"/>
                         <outlet property="nameLabel" destination="ZTy-zj-itz" id="zp2-m7-Byn"/>
@@ -353,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfR-P8-9Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="53"/>
+            <point key="canvasLocation" x="1575" y="-721"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="0Md-zH-gkT">
@@ -375,7 +401,7 @@
                                             <constraint firstAttribute="width" constant="100" id="2Zi-YB-FXW"/>
                                             <constraint firstAttribute="height" constant="25" id="ec4-Ss-xwb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -430,7 +456,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="settingsButton:" destination="poF-nF-iAQ" eventType="touchUpInside" id="OrB-Tf-5EU"/>
-                                            <segue destination="e8z-h9-feN" kind="presentation" identifier="settingsSegue" animates="NO" id="TBn-Yl-C88"/>
+                                            <segue destination="e8z-h9-feN" kind="presentation" identifier="settingsSegue" animates="NO" id="nTe-PC-mk1"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-co-3iW">
@@ -439,7 +465,7 @@
                                             <constraint firstAttribute="width" constant="100" id="SEV-aM-uyt"/>
                                             <constraint firstAttribute="height" constant="25" id="ui1-GO-o7W"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -476,7 +502,7 @@
                                             <constraint firstAttribute="height" constant="25" id="RDs-TB-vSz"/>
                                             <constraint firstAttribute="width" constant="100" id="bGG-QM-Ver"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -502,10 +528,6 @@
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="loggoutButton:" destination="poF-nF-iAQ" eventType="touchUpInside" id="EoL-ey-nAh"/>
-                                            <segue destination="BH3-Ev-GNA" kind="presentation" identifier="loggoutSegue" animates="NO" id="Fbw-KV-riP"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-5u-lxv">
                                         <rect key="frame" x="234" y="511" width="100" height="25"/>
@@ -513,7 +535,7 @@
                                             <constraint firstAttribute="height" constant="25" id="jsi-0i-XCv"/>
                                             <constraint firstAttribute="width" constant="100" id="ngA-Rk-1UP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -553,7 +575,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="M8g-mZ-ZE6"/>
                     <connections>
-                        <outlet property="loggout" destination="92X-bH-MgC" id="8Ky-wQ-GJ5"/>
                         <outlet property="profile" destination="2YL-FG-57b" id="Lv5-cl-V9N"/>
                         <outlet property="qrScanner" destination="BTP-XU-cJ3" id="hHE-bO-V89"/>
                         <outlet property="settings" destination="F9Z-3J-BRI" id="BNd-CL-HL3"/>
@@ -585,7 +606,6 @@
                                 </state>
                                 <connections>
                                     <action selector="profileBackHome:" destination="Tgf-cM-N6l" eventType="touchUpInside" id="Wlg-xY-s34"/>
-                                    <segue destination="poF-nF-iAQ" kind="presentation" identifier="profileBackHomeSegue" animates="NO" id="asO-VO-OFu"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iav-0A-nHl">
@@ -655,7 +675,6 @@
                                 </state>
                                 <connections>
                                     <action selector="profileLogoutButton:" destination="Tgf-cM-N6l" eventType="touchUpInside" id="wiM-a5-hEW"/>
-                                    <segue destination="BH3-Ev-GNA" kind="presentation" identifier="loggoutSegue" animates="NO" id="0yE-CF-8eI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oug-NB-ePS">
@@ -706,7 +725,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPH-uG-3gA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="-785"/>
+            <point key="canvasLocation" x="1104" y="53"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="zhg-H3-6fu">
@@ -729,8 +748,7 @@
                                     <color key="titleColor" name="TextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="settingsBackHome:" destination="e8z-h9-feN" eventType="touchUpInside" id="Bt7-Kr-weR"/>
-                                    <segue destination="poF-nF-iAQ" kind="presentation" identifier="settingsBackHomeSegue" animates="NO" id="aQV-aN-7AX"/>
+                                    <action selector="backHomeButtonTapped:" destination="e8z-h9-feN" eventType="touchUpInside" id="7Hi-AN-4Nl"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iku-81-i6C">
@@ -866,7 +884,6 @@
                                 </state>
                                 <connections>
                                     <action selector="listBackToSettings:" destination="j7T-JB-PvG" eventType="touchUpInside" id="UkW-Yt-V09"/>
-                                    <segue destination="e8z-h9-feN" kind="presentation" identifier="listBackToSettingsSegue" animates="NO" id="9sY-7q-sZC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -891,7 +908,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAA-qh-fPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487" y="893"/>
+            <point key="canvasLocation" x="2254" y="893"/>
         </scene>
         <!--Stamp Card View Controller-->
         <scene sceneID="WEx-GP-5tC">
@@ -915,7 +932,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stampCardBackHome:" destination="yIw-tV-tyM" eventType="touchUpInside" id="CoM-Ec-3gJ"/>
-                                    <segue destination="poF-nF-iAQ" kind="presentation" identifier="stampBackHome" animates="NO" id="Fig-iK-Djp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="Bni-om-dQV">
@@ -1096,8 +1112,6 @@
                                 </state>
                                 <connections>
                                     <action selector="logoutButton:" destination="yIw-tV-tyM" eventType="touchUpInside" id="paH-oY-5Gb"/>
-                                    <action selector="profileLogoutButton:" destination="Tgf-cM-N6l" eventType="touchUpInside" id="t3v-Wk-S9O"/>
-                                    <action selector="qrScannerButton:" destination="poF-nF-iAQ" eventType="touchUpInside" id="V1U-xA-6wF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1251,8 +1265,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9sY-7q-sZC"/>
-        <segue reference="aQV-aN-7AX"/>
-        <segue reference="Fbw-KV-riP"/>
+        <segue reference="Aiz-yX-HYv"/>
     </inferredMetricsTieBreakers>
 </document>

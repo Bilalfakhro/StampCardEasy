@@ -18,6 +18,10 @@ class ProfilePageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     @IBAction func sigOutButtonTapped(_ sender: Any) {
         print("Sign Out button tapped")
         

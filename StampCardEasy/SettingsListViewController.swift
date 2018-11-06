@@ -13,29 +13,29 @@ class SettingsListViewController: UIViewController {
     @IBOutlet weak var itemTextfield: UITextField!
     @IBOutlet weak var settingsListLabel: UILabel!
     
-    var allItems = [String]()
-    var currentItemNumber = 0
+    var theitem = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        itemTextfield.text = allItems[currentItemNumber]
+        itemTextfield.text = theitem
     }
     
+    // SAVE data on device.
     @IBAction func saveItem(_ sender: Any) {
         
-        allItems[currentItemNumber] = itemTextfield.text!
+        theitem = itemTextfield.text!
         
-        UserDefaults.standard.set(allItems, forKey: "items")
+        UserDefaults.standard.set(theitem, forKey: theitem)
  
         // Tryck på knappen SAVE och gå tillbaka till SettingsViewcontroller.
         navigationController?.popToRootViewController(animated: true)
     }
     
-    @IBAction func listBackToSettings(_ sender: AnyObject) {
+    @IBAction func listBackToSettings(_ sender: Any) {
         print("Back to Settings!")
-        self.performSegue(withIdentifier: "listBackToSettingsSegue", sender: self)
+        self.dismiss(animated: false, completion: nil) 
     }
 
 }

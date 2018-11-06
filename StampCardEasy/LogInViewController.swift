@@ -14,8 +14,6 @@ class LogInViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var cityLabel: UILabel!
-    @IBOutlet weak var profileImage: UIImageView!
 
     @IBOutlet weak var loginButton: UIButton!
     
@@ -72,25 +70,31 @@ class LogInViewController: UIViewController {
             {
                 print("GRAPH OK")
                 
-                var fbRes = result as! NSDictionary
+                let fbRes = result as! NSDictionary
                 print(fbRes.value(forKey: "name") as! String)
-                self.nameLabel.text = fbRes.value(forKey: "name") as! String
+                self.nameLabel.text = fbRes.value(forKey: "name") as? String
+               
+                print(fbRes.value(forKey: "email") as! String)
+                self.emailLabel.text = fbRes.value(forKey: "email") as? String
+                
             } else {
                 print("GRAPH ERROR")
             }
         })
+        
+        /*
         graphRequest.start(completionHandler: { (connection, result, error) -> Void in
             
             if(error == nil)
             {
                 print("GRAPH OK")
-                
+ 
                 var fbRes = result as! NSDictionary
                 print(fbRes.value(forKey: "email") as! String)
                 self.emailLabel.text = fbRes.value(forKey: "email") as! String
             } else {
                 print("GRAPH ERROR")
             }
-        })
+        }) */
     }
 }

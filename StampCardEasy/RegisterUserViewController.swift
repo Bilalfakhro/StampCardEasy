@@ -40,9 +40,9 @@ class RegisterUserViewController: UIViewController {
         let userRepeatPassword = repeatPasswordTextfield.text
 
         // Validate required fields are not empty
-        if   (userEmail!.isEmpty) ||
-            (userPassword?.isEmpty)! ||
-            (userRepeatPassword?.isEmpty)!
+        if  (userEmail!.isEmpty) ||
+            (userPassword!.isEmpty) ||
+            (userRepeatPassword!.isEmpty)
         {
             // Display Alert message and return.
             displayMessage(userMessage: "All fields are quired to fill in")
@@ -94,7 +94,7 @@ class RegisterUserViewController: UIViewController {
     func displayMessage(userMessage:String) -> Void {
             DispatchQueue.main.async
             {
-            var alertController = UIAlertController(title: "Alert", message: userMessage, preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Alert", message: userMessage, preferredStyle: .alert)
             
             let OKAction = UIAlertAction(title: "OK", style: .default)
             {
