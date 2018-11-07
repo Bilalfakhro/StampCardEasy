@@ -12,6 +12,9 @@ import MessageUI
 
 class stampCardViewController: UIViewController {
     
+    @IBOutlet weak var textLable: UITextField!
+    
+    
     @IBOutlet weak var stampCardBlueImage: UIImageView!
     
     @IBOutlet weak var box0: UIButton!

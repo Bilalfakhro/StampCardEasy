@@ -8,16 +8,19 @@
 
 import UIKit
 import FirebaseAuth
-import FirebaseDatabase
-import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
 
 class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
-
-    @IBOutlet weak var userNameTextfield: UITextField!
-    @IBOutlet weak var userPasswordTextfield: UITextField!
+    
+    @IBOutlet weak var segmentSelector: UISegmentedControl!
+    @IBOutlet weak var signInLabel: UILabel!
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
+    
+    var isSignIn:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,22 +34,73 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func signUpButtonTapped(_ sender: Any) {
-        print("Sign in button tapped")
+    @IBAction func segmentSelectorTapped(_ sender: UISegmentedControl) {
+        print("Sign button tapped")
         
+        // Flip the Boolean
+        isSignIn = !isSignIn
+        
+        // Check the Bool and set the button and Labels
+        if isSignIn {
+            signInLabel.text = "Sign In"
+            signInButton.setTitle("Sign In", for: .normal)
+        }
+        else {
+            signInLabel.text = "Register"
+            signInButton.setTitle("Register", for: .normal)
+        }
     }
     
-    @IBAction func registerNewAccountButtonTapped(_ sender: Any) {
+    @IBAction func signinButtonTapped(_ sender: UIButton) {
+        print("Sign button tapped")
         
-        print("Register account button tapped")
-       
-        let registerViewController = self.storyboard?.instantiateViewController(withIdentifier: "RegisterUserViewController") as! RegisterUserViewController
-        
-        self.present(registerViewController, animated: true)
-        
-        
+        // TODO: Do some form validation on the email and passeord.
+        if let email = emailTextfield.text,
+            let pass = passwordTextfield.text
+        {
+            // Check if it's sign in or register
+            if isSignIn {
+                // Sign in user with Firebase
+                Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
+                    
+                    // Check that user isn't nil
+                    if user != nil {
+                        // User is found, go to home screen
+                        self.performSegue(withIdentifier: "goToHomeSegue", sender: self)
+                    }
+                    else {
+                        // Error: check error and show message
+                    }
+                })
+            }
+            else {
+                // Register the user with Firebase
+                Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
+                    
+                    // Check that user isn't nill
+                    if user != nil {
+                        // User is found, go to home screen
+                        self.performSegue(withIdentifier: "goToHomeSegue", sender: self)
+                    }
+                    else {
+                        // Error: check error and show message
+                    }
+                })
+            }
+        }
     }
- 
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        // Dismiss the keyboard when the view is tapped on
+        emailTextfield.resignFirstResponder()
+        passwordTextfield.resignFirstResponder()
+    }
+    
+    @IBAction func facebookSignInButton(_ sender: UIButton) {
+        print("Facebook Sign in button tapped")
+    }
+    
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         if let error = error {
             print("Error took \(error.localizedDescription)")
@@ -58,6 +112,4 @@ class SignInViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("User signed out")
     }
-    
-
 }
