@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import MessageUI
 
 class stampCardViewController: UIViewController {
     
@@ -23,6 +25,12 @@ class stampCardViewController: UIViewController {
     @IBOutlet weak var box8: UIButton!
     @IBOutlet weak var box9: UIButton!
     
+    var lunchData = [String]()
+    
+    var ref:DatabaseReference?
+    var DatabaseHandler:DatabaseHandle?
+    
+    
     var boxOn = UIImage(named: "checkBox")
     var boxOff = UIImage(named: "unCheckBox")
     
@@ -32,9 +40,31 @@ class stampCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Firebase Database Reference
+        ref = Database.database().reference()
+
         isBoxClicked = false
         view.backgroundColor = UIColor.white
         
+        // Retrieve the post and listenfor changes
+   //   DatabaseHandle =
+        ref?.child("Valfarden").observe(.value, with: { (snappshot) in
+            
+        // Code to excute when a child i changed.
+        // Take a value of the snappshot and added it to lunchData array.
+            
+        // Try to convert the value of the data to a string.
+        let lunch = snappshot.value as? String
+            
+        if let actualLunch = lunch {
+            // Append the data to our lunchData array
+            self.lunchData.append(actualLunch)
+            // Reload the
+            func reloadData() {
+                print("OK")
+            }
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,19 +82,18 @@ class stampCardViewController: UIViewController {
         if isBoxClicked == true {
             box0.setImage(boxOn, for: UIControl.State.normal)
             // self.view.backgroundColor = UIColor.red
-            
             // HIDE the rest of the boxes.
             // box1.isHidden = true
             // box2.isHidden = true
         } else {
             box0.setImage(boxOff, for: UIControl.State.normal)
             // self.view.backgroundColor = UIColor.white
-            
             // HIDE the rest of the boxes.
             // box1.isHidden = false
             // box2.isHidden = false
         }
     }
+    
     @IBAction func boxOne(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -73,20 +102,11 @@ class stampCardViewController: UIViewController {
         }
         if isBoxClicked == true {
             box1.setImage(boxOn, for: UIControl.State.normal)
-            // self.view.backgroundColor = UIColor.red
-            
-            // HIDE the rest of the boxes.
-            // box1.isHidden = true
-            // box2.isHidden = true
         } else {
             box1.setImage(boxOff, for: UIControl.State.normal)
-            // self.view.backgroundColor = UIColor.white
-            
-            // HIDE the rest of the boxes.
-            // box1.isHidden = false
-            // box2.isHidden = false
         }
     }
+    
     @IBAction func boxTwo(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -99,6 +119,7 @@ class stampCardViewController: UIViewController {
             box2.setImage(boxOff, for: UIControl.State.normal)
         }
     }
+    
     @IBAction func boxThree(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -111,6 +132,7 @@ class stampCardViewController: UIViewController {
             box3.setImage(boxOff, for: UIControl.State.normal)
         }
     }
+    
     @IBAction func boxFour(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -123,6 +145,7 @@ class stampCardViewController: UIViewController {
             box4.setImage(boxOff, for: UIControl.State.normal)
         }
     }
+    
     @IBAction func boxFive(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -135,6 +158,7 @@ class stampCardViewController: UIViewController {
             box5.setImage(boxOff, for: UIControl.State.normal)
         }
     }
+    
     @IBAction func boxSix(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -147,6 +171,7 @@ class stampCardViewController: UIViewController {
             box6.setImage(boxOff, for: UIControl.State.normal)
         }
     }
+    
     @IBAction func boxSeven(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -159,6 +184,7 @@ class stampCardViewController: UIViewController {
             box7.setImage(boxOff, for: UIControl.State.normal)
         }
     }
+    
     @IBAction func boxEight(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -171,6 +197,7 @@ class stampCardViewController: UIViewController {
             box8.setImage(boxOff, for: UIControl.State.normal)
         }
     }
+    
     @IBAction func boxNine(_ sender: UIButton) {
         if isBoxClicked == true {
             isBoxClicked = false
@@ -183,7 +210,6 @@ class stampCardViewController: UIViewController {
             box9.setImage(boxOff, for: UIControl.State.normal)
         }
     }
-
 
     @IBAction func stampCardFacebook(_ sender: Any) {
         print("Facebook")
@@ -205,5 +231,10 @@ class stampCardViewController: UIViewController {
         print("Logged out")
     }
  
- }
+    @IBAction func addLunch(_ sender: Any) {
+        
+        // Post a data to firebase
+    ref?.child("Valfarden").child("Lunch").child("Antal").childByAutoId().setValue("0")
+    }
+}
 

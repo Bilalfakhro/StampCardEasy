@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B28827975D5ED063D29BC92A /* Pods_StampCardEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0F2EFFC3756F1B2A0939C /* Pods_StampCardEasy.framework */; };
 		DB15FBB5217FDA9A00C97ADC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15FBB4217FDA9A00C97ADC /* SettingsViewController.swift */; };
+		DB1783202192490100788609 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB17831F2192490100788609 /* GoogleService-Info.plist */; };
 		DB261FDF2191981F0009CE98 /* ProtectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB261FDE2191981F0009CE98 /* ProtectedViewController.swift */; };
 		DB261FE02191D38B0009CE98 /* SettingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D521878B010056267E /* SettingsListViewController.swift */; };
 		DB2C62CF217FA7B700F40095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C62CE217FA7B700F40095 /* AppDelegate.swift */; };
@@ -16,9 +17,7 @@
 		DB2C62D4217FA7B700F40095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62D2217FA7B700F40095 /* Main.storyboard */; };
 		DB2C62D9217FA7B800F40095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62D7217FA7B800F40095 /* LaunchScreen.storyboard */; };
 		DB2C62E1217FAA1900F40095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C62E0217FAA1800F40095 /* Assets.xcassets */; };
-		DB36FE80218A48F600E5A0EA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */; };
 		DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */; };
-		DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */; };
 		DB78E6D8218797BE0056267E /* itemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78E6D7218797BE0056267E /* itemTableViewCell.swift */; };
 		DB84A8CD2190D038004FC6C2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB84A8CC2190D038004FC6C2 /* SignInViewController.swift */; };
 		DB84A8CF2190D1CF004FC6C2 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB84A8CE2190D1CF004FC6C2 /* RegisterUserViewController.swift */; };
@@ -30,6 +29,7 @@
 		24BF91D62249DC2C59526B57 /* Pods-StampCardEasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StampCardEasy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StampCardEasy/Pods-StampCardEasy.debug.xcconfig"; sourceTree = "<group>"; };
 		8AC0F2EFFC3756F1B2A0939C /* Pods_StampCardEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StampCardEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB15FBB4217FDA9A00C97ADC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DB17831F2192490100788609 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB261FDE2191981F0009CE98 /* ProtectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedViewController.swift; sourceTree = "<group>"; };
 		DB2C62CB217FA7B700F40095 /* StampCardEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StampCardEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2C62CE217FA7B700F40095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,10 +38,8 @@
 		DB2C62D8217FA7B800F40095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB2C62DA217FA7B800F40095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB2C62E0217FAA1800F40095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		DB36FE81218A4EFD00E5A0EA /* StampCardEasy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StampCardEasy-Bridging-Header.h"; sourceTree = "<group>"; };
 		DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		DB78E6D521878B010056267E /* SettingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListViewController.swift; sourceTree = "<group>"; };
 		DB78E6D7218797BE0056267E /* itemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemTableViewCell.swift; sourceTree = "<group>"; };
 		DB84A8CC2190D038004FC6C2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				DB2C62D0217FA7B700F40095 /* MainViewController.swift */,
 				DB2C62D2217FA7B700F40095 /* Main.storyboard */,
 				DB78E6D7218797BE0056267E /* itemTableViewCell.swift */,
-				DB36FE7F218A48F600E5A0EA /* LogInViewController.swift */,
 				DB6BE5C6217FDCE6001C49B8 /* ProfileViewController.swift */,
 				DB78E6D521878B010056267E /* SettingsListViewController.swift */,
 				DB15FBB4217FDA9A00C97ADC /* SettingsViewController.swift */,
@@ -107,9 +104,9 @@
 				DB261FDE2191981F0009CE98 /* ProtectedViewController.swift */,
 				DB84A8CE2190D1CF004FC6C2 /* RegisterUserViewController.swift */,
 				DB84A8CC2190D038004FC6C2 /* SignInViewController.swift */,
-				DB6BE5D1217FE42B001C49B8 /* QRScannerViewController.swift */,
 				DB2C62E0217FAA1800F40095 /* Assets.xcassets */,
 				DB2C62D7217FA7B800F40095 /* LaunchScreen.storyboard */,
+				DB17831F2192490100788609 /* GoogleService-Info.plist */,
 				DB2C62DA217FA7B800F40095 /* Info.plist */,
 				DB36FE81218A4EFD00E5A0EA /* StampCardEasy-Bridging-Header.h */,
 			);
@@ -196,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2C62D9217FA7B800F40095 /* LaunchScreen.storyboard in Resources */,
+				DB1783202192490100788609 /* GoogleService-Info.plist in Resources */,
 				DB2C62E1217FAA1900F40095 /* Assets.xcassets in Resources */,
 				DB2C62D4217FA7B700F40095 /* Main.storyboard in Resources */,
 			);
@@ -308,13 +306,11 @@
 				DB261FE02191D38B0009CE98 /* SettingsListViewController.swift in Sources */,
 				DB78E6D8218797BE0056267E /* itemTableViewCell.swift in Sources */,
 				DB2C62D1217FA7B700F40095 /* MainViewController.swift in Sources */,
-				DB36FE80218A48F600E5A0EA /* LogInViewController.swift in Sources */,
 				DB2C62CF217FA7B700F40095 /* AppDelegate.swift in Sources */,
 				DBBBF411218AF8C000A0D208 /* stampCardViewController.swift in Sources */,
 				DB6BE5C7217FDCE6001C49B8 /* ProfileViewController.swift in Sources */,
 				DB84A8D12190DB81004FC6C2 /* ProfilePageViewController.swift in Sources */,
 				DB84A8CF2190D1CF004FC6C2 /* RegisterUserViewController.swift in Sources */,
-				DB6BE5D3217FE42B001C49B8 /* QRScannerViewController.swift in Sources */,
 				DB84A8CD2190D038004FC6C2 /* SignInViewController.swift in Sources */,
 				DB261FDF2191981F0009CE98 /* ProtectedViewController.swift in Sources */,
 				DB15FBB5217FDA9A00C97ADC /* SettingsViewController.swift in Sources */,
